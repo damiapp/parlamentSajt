@@ -1,0 +1,22 @@
+import React from 'react';
+import Notification from '../components/Notification';
+function HomePage(props){
+    return(
+        <div class="container">
+            <div class='mt-4 row'>
+                <div class='col-md-9'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas. Hendrerit dolor magna eget est lorem ipsum dolor. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Odio morbi quis commodo odio aenean sed adipiscing diam donec. Consectetur adipiscing elit ut aliquam purus sit amet. Tellus cras adipiscing enim eu. Vulputate sapien nec sagittis aliquam. Mauris rhoncus aenean vel elit scelerisque mauris. Convallis convallis tellus id interdum velit. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Nisl tincidunt eget nullam non nisi est sit.
+Nec ullamcorper sit amet risus nullam. Dignissim convallis aenean et tortor at risus. Quis vel eros donec ac. Nibh sed pulvinar proin gravida hendrerit. Laoreet suspendisse interdum consectetur libero id faucibus. Interdum velit laoreet id donec ultrices tincidunt arcu non. Bibendum arcu vitae elementum curabitur. Massa placerat duis ultricies lacus. Maecenas ultricies mi eget mauris. At tempor commodo ullamcorper a lacus vestibulum. Ut sem nulla pharetra diam sit amet nisl. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Sagittis orci a scelerisque purus semper eget. Aliquet eget sit amet tellus cras adipiscing. Adipiscing at in tellus integer feugiat scelerisque varius. Sit amet venenatis urna cursus eget nunc scelerisque viverra. Donec adipiscing tristique risus nec feugiat in fermentum posuere urna. Ornare quam viverra orci sagittis eu volutpat.
+Pharetra convallis posuere morbi leo urna molestie at elementum. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Aliquam malesuada bibendum arcu vitae. Tincidunt vitae semper quis lectus nulla at. Mollis nunc sed id semper risus in. Id interdum velit laoreet id. Nullam eget felis eget nunc lobortis mattis. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Tincidunt vitae semper quis lectus nulla at. Leo vel fringilla est ullamcorper eget nulla facilisi. Consectetur adipiscing elit ut aliquam purus. Ut diam quam nulla porttitor massa id neque aliquam vestibulum. Porttitor lacus luctus accumsan tortor posuere ac. In est ante in nibh mauris cursus mattis molestie. Augue neque gravida in fermentum et sollicitudin ac orci.
+Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Dictum non consectetur a erat nam at. Amet risus nullam eget felis eget nunc lobortis mattis. Dictum non consectetur a erat nam at lectus. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Vitae et leo duis ut diam. Tortor at risus viverra adipiscing at. Elementum sagittis vitae et leo duis ut diam. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Vitae suscipit tellus mauris a diam maecenas sed.
+Ac turpis egestas sed tempus urna et pharetra. Venenatis a condimentum vitae sapien. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Consectetur a erat nam at. Mauris vitae ultricies leo integer malesuada nunc. Integer eget aliquet nibh praesent tristique magna sit amet. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Donec massa sapien faucibus et. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Interdum velit euismod in pellentesque. Adipiscing vitae proin sagittis nisl rhoncus. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Fames ac turpis egestas integer eget aliquet.</p>
+                </div>
+                <div class='col-md-3 pull-right'>
+                    <Notification />
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default HomePage;
