@@ -15,12 +15,14 @@ function Cards(props){
             <Card.Img variant="top" src={props.item.imgSrc}/>
             <Card.Header>{props.item.ime}</Card.Header>
             <Card.Body>
+            <div style={{ overflowY : 'auto', maxHeight : '300px'}}>
             <Card.Text>
                 <p><b>Broj indeksa</b>: {props.item.brIndeks}<br/>
                 <b>Smer</b>: {props.item.smer}<br/>
                 <b>Mejl</b>: {props.item.mejl}<br/>
                 <b>Funkcije</b>: {props.item.funkcije}</p>        
             </Card.Text>
+            </div>
             </Card.Body>
         </Card>
     );

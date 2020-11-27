@@ -1,4 +1,5 @@
 import React from 'react';
+import '../pages/helping.css';
 
 
 class Notification extends React.Component{
@@ -27,8 +28,8 @@ class Notification extends React.Component{
 
     render(){
         return(
-            <div class="container">
-                <h1 class="display-5">Обавештења</h1>
+            <div  id='rcorners1' class="container">
+                <h2 style={{textAlign : 'center'}}>Обавештења</h2>
                 <div>
                     {this.makeItems(this.state.items)}  
                 </div>

@@ -66,7 +66,6 @@ class App extends React.Component{
             <Nav className="ml-auto">
               <Link className="nav-link" to="/">Почетна страна</Link>
               <Link className="nav-link" to="/clanovi">Чланови парламента</Link>
-              <Link className="nav-link" to="/pitanja">Честа питања</Link>
               <Link className="nav-link" to="/materijali">Материјали</Link>
               <Link className="nav-link" to="/funkcije">Функције</Link>
             </Nav>
@@ -78,9 +77,6 @@ class App extends React.Component{
         
         <Route path="/clanovi" exact render={() => 
         <MembersPage title={this.state.clanovi.title} />} />
-        
-        <Route path="/pitanja" exact render={() => 
-        <QuestionsPage title={this.state.pitanja.title} />} />
         
         <Route path="/materijali" exact render={() => 
         <MaterialsPage title={this.state.materijali.title} />} />

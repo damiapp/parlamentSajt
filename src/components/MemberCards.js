@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Card from '../components/Card';
+import '../pages/helping.css';
 
 import profpic from '../images/profile.jpeg';
 import stefandur from '../images/stefandur.jpg';
@@ -17,6 +18,7 @@ import mihvla from '../images/mihvla.jpg';
 import vari from '../images/vari.jpg';
 import stefmalb from '../images/stefmalb.jpg';
 import mitarav from '../images/mitarav.jpg';
+import mgalj from '../images/mgalj.jpg';
 
 
 class MemberCards extends React.Component{
@@ -56,7 +58,7 @@ class MemberCards extends React.Component{
                     id: 3,
                     ime: 'Дурлевић Стефан',
                     imgSrc: stefandur,
-                    brindeks:'163/2017',
+                    brIndeks:'163/2017',
                     smer:'Информатика',
                     mejl:'stefandur@hotmail.com',
                     funkcije:"Председник Клуба волонтера при Студентском парламенту Математичког факултета, Потпредседник за односе са јавношћу Студентском парламентуа Математичког факултета, Члан Наставно-научног већа, Члан дисциплинске комисије Математичког факултета, Члан комисије за вредновање ваннаставних активности Математичког факултета"
@@ -200,10 +202,19 @@ class MemberCards extends React.Component{
                     id: 19,
                     ime: 'Митар Аврамовић',
                     imgSrc: mitarav,
-                    brIndeks:'097/2018',
+                    brIndeks:'97/2018',
                     smer:'Статистика, актуарска и финансијска математика',
                     mejl:'mv18097@alas.matf.bg.ac.rs',
                     funkcije:'Повереник за финансијске молбе, члан Савета, Члан Наставно-научног већа'
+                },
+                {
+                    id: 20,
+                    ime: 'Милица Гаљак',
+                    imgSrc: mgalj,
+                    brIndeks:'75/2019',
+                    smer:'Рачунарство и информатика',
+                    mejl:'milica.galjak@gmail.com',
+                    funkcije:'Потпредседник за науку, Генерални секретар парламента Математичког факултета Универзитета у Београду'
                 },
             ]
         }
