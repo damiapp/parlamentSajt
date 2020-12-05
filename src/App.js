@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router,Link,Route} from 'react-router-dom';
+import {BrowserRouter as HashRouter,Link,Route} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -46,10 +46,10 @@ class App extends React.Component{
 
   render(){
     return(
-      <Router>
+      <HashRouter basename=".">
       <Container className="p-0" fluid={true}>
-
-        <Navbar className="border-bottom" bg="dark" variant='dark' expand="lg">
+        <Container >
+        <Navbar fixed='top' className="border-bottom" bg="dark" variant='dark' expand="lg">
           <Navbar.Brand>
             <img
               src={logo}
@@ -71,7 +71,9 @@ class App extends React.Component{
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        
+        </Container>
+
+      <div style={{padding:'60px'}}>
         <Route path="/" exact render={() => 
         <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
         
@@ -83,11 +85,11 @@ class App extends React.Component{
         
         <Route path="/funkcije" exact render={() => 
         <PositionPage title={this.state.funkcije.title} />} />
-        
-        <Footer />
- 
+        </div>
+
       </Container>
-    </Router>
+        <Footer />
+    </HashRouter>
     );
   }
 }
