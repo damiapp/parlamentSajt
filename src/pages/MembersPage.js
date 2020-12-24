@@ -1,9 +1,15 @@
 import React from 'react';
-import MemberCards from '../components/MemberCards';
+import { Suspense, lazy } from 'react';
+import Spinner from 'react-bootstrap/Spinner';
+
+const MemberCards = React.lazy(() => import('../components/MemberCards'));
+
 function MembersPage(props){
     return(
         <div class="mt-4 ">
-            <MemberCards />
+            <Suspense fallback={ <Spinner animation="border" variant="danger" />}>
+                <MemberCards />
+            </Suspense>
         </div>
     );
 }

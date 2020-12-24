@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as HashRouter,Link,Route} from 'react-router-dom';
+import {BrowserRouter as HashRouter, Link, Route, Switch} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -46,7 +46,7 @@ class App extends React.Component{
 
   render(){
     return(
-      <HashRouter basename=".">
+      <HashRouter basename="/~parlament">
       <Container className="p-0" fluid={true}>
         <Container >
         <Navbar fixed='top' className="border-bottom" bg="dark" variant='dark' expand="lg">
@@ -74,17 +74,17 @@ class App extends React.Component{
         </Container>
 
       <div style={{padding:'60px'}}>
-        <Route path="/" exact render={() => 
-        <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
-        
-        <Route path="/clanovi" exact render={() => 
-        <MembersPage title={this.state.clanovi.title} />} />
-        
-        <Route path="/materijali" exact render={() => 
-        <MaterialsPage title={this.state.materijali.title} />} />
-        
-        <Route path="/funkcije" exact render={() => 
-        <PositionPage title={this.state.funkcije.title} />} />
+          <Route path="/" exact render={() => 
+          <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
+          
+          <Route path="/clanovi" exact render={() => 
+          <MembersPage title={this.state.clanovi.title} />} />
+          
+          <Route path="/materijali" exact render={() => 
+          <MaterialsPage title={this.state.materijali.title} />} />
+          
+          <Route path="/funkcije" exact render={() => 
+          <PositionPage title={this.state.funkcije.title} />} />
         </div>
 
       </Container>

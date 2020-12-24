@@ -56,7 +56,7 @@ class MemberCards extends React.Component{
                 },
                 {
                     id: 3,
-                    ime: 'Дурлевић Стефан',
+                    ime: 'Стефан Дурлевић',
                     imgSrc: stefandur,
                     brIndeks:'163/2017',
                     smer:'Информатика',
@@ -110,10 +110,10 @@ class MemberCards extends React.Component{
                 },
                 {
                     id: 9,
-                    ime: 'Јелена тешић',
+                    ime: 'Јелена Тешић',
                     imgSrc: jelenates,
                     brIndeks:'361/2017',
-                    smer:'Професор математике',
+                    smer:'Рачунарство и информатика',
                     mejl:'jelenatesic2998@gmail.com',
                     funkcije:'Члан одбора за наставу, Члан Наставно-научног већа'
                 },

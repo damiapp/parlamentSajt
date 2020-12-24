@@ -19,7 +19,7 @@ class Notification extends React.Component{
     makeItems = (items) => {
         return items.map(item => {
             return (
-                <a href={item.link} class="list-group-item list-group-item-action list-group-item-dark">
+                <a href={item.link} target="_blank" class="list-group-item list-group-item-action list-group-item-dark">
                     {item.tekst}
                 </a>
             );
